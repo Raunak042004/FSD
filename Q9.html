@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>DOM Navigation</title>
+</head>
+<body>
+  <div id="container">
+    <p id="first">First paragraph</p>
+    <p id="second">Second paragraph</p>
+  </div>
+
+  <script>
+    const secondPara = document.getElementById("second");
+
+    console.log("Parent Node:", secondPara.parentNode);
+    console.log("Child Nodes of #container:", secondPara.parentNode.childNodes);
+    console.log("Previous Sibling:", secondPara.previousSibling);
+    console.log("Next Sibling:", secondPara.nextSibling);
+  </script>
+</body>
+</html>
