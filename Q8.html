@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Input to Paragraph</title>
+</head>
+<body>
+  <input type="text" id="userInput" placeholder="Type something..." />
+  <button onclick="updateText()">Show Text</button>
+  <p id="output"></p>
+
+  <script>
+    const updateText = () => {
+      const input = document.getElementById("userInput").value;
+      document.getElementById("output").textContent = input;
+    };
+  </script>
+</body>
+</html>
